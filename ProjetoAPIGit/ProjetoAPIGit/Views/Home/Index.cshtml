@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bem Vindo ao Nosso Sistema!</h1>
+    <p class="lead">Espero que tenha uma boa experiência.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Meus Repositórios</h2>
+        <p>
+            Para ver mais informações sobre os Repositórios clique no botão abaixo.
+        </p>
+        <p>@Html.ActionLink("Meus Repositórios »", "MeusRepositorios", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Favoritos</h2>
+        <p>Para ver mais informações sobre os repositórios Favoritos clique no botão abaixo.</p>
+        <p>@Html.ActionLink("Favoritos »", "ListarFavoritos", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Buscar Repositórios</h2>
+        <p>Para Buscar Repositórios clique no botão abaixo.</p>
+        <p>@Html.ActionLink("Buscar Repositórios »", "BuscarRepositorio", "Home", new { area = "" }, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
